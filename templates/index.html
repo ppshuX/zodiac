@@ -16,12 +16,98 @@
         <br>
         <div class="index_tit">☯ zodiac ☯</div>
         <br>
-        <a class="left" href="{% url 'pisces' %}"> to ♓︎</a>
+        <a class="left" href="{% url 'pisces' %}">♓︎ to</a>
         <a class="right" href="{% url 'aries' %}"> to ♈︎</a>
         <br>
         <hr>
 
         <img class="pho_index" src="{% static 'photos/index.png' %}" alt="photo">
+        <!DOCTYPE html>
+        <html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>星座判断跳转</title>
+            <!-- 引入 Bootstrap CSS -->
+            <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+            <script>
+                function checkZodiacAndRedirect() {
+                    var userInput = document.getElementById("userInput").value; // 获取输入框的值
+
+                    // 验证日期格式 (假设用户输入的格式为 YYYY-MM-DD)
+                    var date = new Date(userInput);
+                    if (isNaN(date.getTime())) {
+                        alert("请输入有效的日期（格式：YYYY-MM-DD）");
+                        return;
+                    }
+
+                    // 获取月份和日期
+                    var month = date.getMonth() + 1; // 月份是从0开始的，所以要加1
+                    var day = date.getDate();
+
+                    var targetUrl = ""; // 初始化目标链接
+
+                    // 根据月份和日期判断星座
+                    if ((month === 3 && day >= 21) || (month === 4 && day <= 19)) {
+                        targetUrl = "/aries/";  // 白羊座的页面 URL
+                    } else if ((month === 4 && day >= 20) || (month === 5 && day <= 20)) {
+                        targetUrl = "/taurus/"; // 金牛座的页面 URL
+                    } else if ((month === 5 && day >= 21) || (month === 6 && day <= 20)) {
+                        targetUrl = "/gemini/"; // 双子座的页面 URL
+                    } else if ((month === 6 && day >= 21) || (month === 7 && day <= 22)) {
+                        targetUrl = "/cancer/"; // 巨蟹座的页面 URL
+                    } else if ((month === 7 && day >= 23) || (month === 8 && day <= 22)) {
+                        targetUrl = "/leo/"; // 狮子座的页面 URL
+                    } else if ((month === 8 && day >= 23) || (month === 9 && day <= 22)) {
+                        targetUrl = "/virgo/"; // 处女座的页面 URL
+                    } else if ((month === 9 && day >= 23) || (month === 10 && day <= 22)) {
+                        targetUrl = "/libra/"; // 天秤座的页面 URL
+                    } else if ((month === 10 && day >= 23) || (month === 11 && day <= 21)) {
+                        targetUrl = "/scorpio/"; // 天蝎座的页面 URL
+                    } else if ((month === 11 && day >= 22) || (month === 12 && day <= 21)) {
+                        targetUrl = "/sagittarius/"; // 射手座的页面 URL
+                    } else if ((month === 12 && day >= 22) || (month === 1 && day <= 19)) {
+                        targetUrl = "/capricorn/"; // 摩羯座的页面 URL
+                    } else if ((month === 1 && day >= 20) || (month === 2 && day <= 18)) {
+                        targetUrl = "/aquarius/"; // 水瓶座的页面 URL
+                    } else if ((month === 2 && day >= 19) || (month === 3 && day <= 20)) {
+                        targetUrl = "/pisces/"; // 双鱼座的页面 URL
+                    }
+
+                    // 跳转到相应星座页面
+                    if (targetUrl) {
+                        window.location.href = targetUrl;
+                    } else {
+                        alert("日期不符合星座范围");
+                    }
+                }
+            </script>
+        </head>
+
+        <body class="bg-light">
+
+            <div class="container mt-5">
+                <h1 style="color: whitesmoke;" class="text-center">请输入生日，定位星座</h1>
+                <p style="color: bisque;" class="text-center">请输入日期（格式：YYYY-MM-DD）</p>
+
+                <div class="form-group text-center">
+                    <input type="text" id="userInput" class="form-control w-50 mx-auto" placeholder="请输入日期">
+                    <button style="align-items: center; width: 50%; margin-left: 25%;"
+                        onclick="checkZodiacAndRedirect()" class="btn btn-primary btn-block mt-3">跳转</button>
+                </div>
+            </div>
+
+            <!-- 引入 Bootstrap JavaScript -->
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        </body>
+
+        </html>
+
+        <img>
     </div>
 </body>
 

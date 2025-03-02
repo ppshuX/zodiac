@@ -12,6 +12,8 @@
 
 <body>
     <div class="index_bckg">
+        <audio id="bgmusic" src="{% static 'audios/audio.mp4' %}" autoplay="autoplay" loop="loop"
+            style="display: block; width: 3%; height:3%;"></audio>
         <hr>
         <br>
         <div class="index_tit">☯ zodiac ☯</div>
@@ -91,15 +93,16 @@
                 <h1 style="font-size:20px; color:whitesmoke; align-items: center; width: 50%; margin-left: 25%;"
                     class="text-center">
                     输入生日，定位星座</h1>
-                <p style="font-size: 10px; color: bisque; align-items: center; width: 50%; margin-left: 25%;" class="text-center">
-                请输入日期（格式：YYYY-MM-DD）</p>
+                <p style="font-size: 10px; color: bisque; align-items: center; width: 50%; margin-left: 25%;"
+                    class="text-center">
+                    请输入日期（格式：YYYY-MM-DD）</p>
 
                 <div class="form-group text-center">
                     <input style="align-items: center; width: 50%; margin-left: 25%;" type="text" id="userInput"
-                                                                                                  class="form-control w-50 mx-auto" placeholder="请输入日期">
+                        class="form-control w-50 mx-auto" placeholder="请输入日期">
                     <br>
                     <button style="align-items: center; width: 50%; margin-left: 25%;"
-                            onclick="checkZodiacAndRedirect()" class="btn btn-primary btn-block mt-3">跳转</button>
+                        onclick="checkZodiacAndRedirect()" class="btn btn-primary btn-block mt-3">跳转</button>
                 </div>
             </div>
             <!-- 引入 Bootstrap JavaScript -->

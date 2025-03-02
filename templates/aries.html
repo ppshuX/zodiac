@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aries</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="icon" href="{% static 'photos/stars/logo1.png' %}">
+</head>
+
+<body>
+    <div class="aries_bckg">
+        <hr>
+        <div class="aries_tit">♈︎ Aries - 白羊座 ♈︎</div>
+        <a class="left" href="{% url 'index' %}"> to the start</a>
+        <a class="right" href="{% url 'taurus' %}"> to ♉︎ </a>
+        <br>
+        <hr>
+
+        <img class="pho" src="{% static 'photos/stars/aries.png' %}" alt="photo">
+    </div>
+</body>
+
+</html>

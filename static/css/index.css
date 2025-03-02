@@ -1,0 +1,201 @@
+.index_bckg {
+    float: left;
+    width: 100%;
+    background-color: rgb(6, 6, 113, 0.9);
+}
+
+.aries_bckg {
+    float: left;
+    width: 100%;
+    background-color: lightgreen;
+}
+
+.taurus_bckg {
+    float: left;
+    width: 100%;
+    background-color: rgb(24, 5, 97, 0.9)
+}
+
+.gemini_bckg {
+    float: left;
+    width: 100%;
+    background-color: rgb(84, 9, 121)
+}
+
+.cancer_bckg {
+    float: left;
+    width: 100%;
+    background-color: rgb(141, 9, 9);
+}
+
+.leo_bckg {
+    float: left;
+    width: 100%;
+    background-color: #734E0D
+}
+
+.virgo_bckg {
+    float: left;
+    width: 100%;
+    background-color: rgb(106, 15, 15)
+}
+
+.libra_bckg {
+    float: left;
+    width: 100%;
+    background-color:#4B0082
+}
+
+.scorpio_bckg {
+    float: left;
+    width: 100%;
+    background-color:#520940
+}
+
+.sagittarius_bckg {
+    float: left;
+    width: 100%;
+    background-color:#155747
+}
+
+.capricornus_bckg {
+    float: left;
+    width: 100%;
+    background-color:#0F4E5B
+}
+
+.aquarius_bckg {
+    float: left;
+    width: 100%;
+    background-color:#0F4E5B
+}
+
+.pisces_bckg {
+    float: left;
+    width: 100%;
+    background-color:#132957
+}
+
+.index_tit {
+    text-align: center;
+    font-size: 100px;
+    letter-spacing: 0.5em;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+
+.aries_tit {
+    text-align: center;
+    font-size: 80px;
+    letter-spacing: 0.4em;
+    font-family: 'Times New Roman', Times, serif;
+    color: green;
+}
+
+.taurus_tit {
+    text-align: center;
+    font-size: 80px;
+    letter-spacing: 0.4em;
+    font-family: 'Times New Roman', Times, serif;
+    color: gold;
+}
+
+.gemini_tit {
+    text-align: center;
+    font-size: 80px;
+    letter-spacing: 0.4em;
+    font-family: 'Times New Roman', Times, serif;
+    color:#87CEEB
+}
+
+.cancer_tit {
+    text-align: center;
+    font-size: 80px;
+    letter-spacing: 0.4em;
+    font-family: 'Times New Roman', Times, serif;
+    color:#FFFFFF
+}
+
+.leo_tit {
+    text-align: center;
+    font-size: 80px;
+    letter-spacing: 0.4em;
+    font-family: 'Times New Roman', Times, serif;
+    color:#FAEBD7
+}
+
+.virgo_tit {
+    text-align: center;
+    font-size: 80px;
+    letter-spacing: 0.4em;
+    font-family: 'Times New Roman', Times, serif;
+    color:#FFB6C1
+}
+
+.libra_tit {
+    text-align: center;
+    font-size: 80px;
+    letter-spacing: 0.4em;
+    font-family: 'Times New Roman', Times, serif;
+    color:#FFB6C1
+}
+
+.scorpio_tit {
+    text-align: center;
+    font-size: 80px;
+    letter-spacing: 0.4em;
+    font-family: 'Times New Roman', Times, serif;
+    color:#C0C0C0
+}
+
+.sagittarius_tit {
+    text-align: center;
+    font-size: 80px;
+    letter-spacing: 0.25em;
+    font-family: 'Times New Roman', Times, serif;
+    color:#C0C0C0
+}
+
+.capricornus_tit {
+    text-align: center;
+    font-size: 80px;
+    letter-spacing: 0.25em;
+    font-family: 'Times New Roman', Times, serif;
+    color:lightblue
+}
+
+.aquarius_tit{
+    text-align: center;
+    font-size: 80px;
+    letter-spacing: 0.25em;
+    font-family: 'Times New Roman', Times, serif;
+    color:lightblue
+}
+
+.pisces_tit {
+    text-align: center;
+    font-size: 80px;
+    letter-spacing: 0.25em;
+    font-family: 'Times New Roman', Times, serif;
+    color:#0744F7
+}
+
+.pho {
+    float: left;
+    width: 100%;
+}
+
+.right {
+    font-size: 25px;
+    color: cornsilk;
+    float: right;
+    text-decoration: none;
+    user-select: none;
+}
+
+.left {
+    font-size: 25px;
+    color: cornsilk;
+    float: left;
+    text-decoration: none;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sagittarius</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="icon" href="{% static 'photos/stars/logo5.png' %}">
+</head>
+
+<body>
+    <div class="sagittarius_bckg">
+        <hr>
+        <div class="sagittarius_tit">♐︎ Sagittarius - 射手座 ♐︎</div>
+        <a class="left" href="{% url 'scorpio' %}"> to ♏︎ </a>
+        <a class="right" href="{% url 'capricornus' %}"> to ♑︎ </a>
+        <br>
+        <hr>
+
+        <img class="pho" src="{% static 'photos/stars/sagittarius.png' %}" alt="photo">
+    </div>
+</body>
+
+</html>

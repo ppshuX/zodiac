@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libra</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="icon" href="{% static 'photos/stars/logo7.png' %}">
+</head>
+
+<body>
+    <div class="libra_bckg">
+        <hr>
+        <div class="libra_tit">♎︎ Libra - 天秤座 ♎︎</div>
+        <a class="left" href="{% url 'virgo' %}"> to ♍︎</a>
+        <a class="right" href="{% url 'scorpio' %}"> to ♏︎ </a>
+        <br>
+        <hr>
+
+        <img class="pho" src="{% static 'photos/stars/libra.png' %}" alt="photo">
+    </div>
+</body>
+
+</html>

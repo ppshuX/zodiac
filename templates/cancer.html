@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancer</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="icon" href="{% static 'photos/stars/logo10.png' %}">
+</head>
+
+<body>
+    <div class="cancer_bckg">
+        <hr>
+        <div class="cancer_tit">♋︎ Cancer - 巨蟹座 ♋︎</div>
+        <a class="left" href="{% url 'gemini' %}"> to ♊︎</a>
+        <a class="right" href="{% url 'leo' %}"> to ♌︎ </a>
+        <br>
+        <hr>
+
+        <img class="pho" src="{% static 'photos/stars/cancer.png' %}" alt="photo">
+    </div>
+</body>
+
+</html>

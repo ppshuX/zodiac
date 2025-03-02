@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capricornus</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="icon" href="{% static 'photos/stars/logo4.png' %}">
+</head>
+
+<body>
+    <div class="capricornus_bckg">
+        <hr>
+        <div class="capricornus_tit">♑︎ Capricornus - 摩羯座 ♑︎</div>
+        <a class="left" href="{% url 'sagittarius' %}"> to ♐︎ </a>
+        <a class="right" href="{% url 'aquarius' %}"> to ♒︎ </a>
+        <br>
+        <hr>
+
+        <img class="pho" src="{% static 'photos/stars/capricornus.png' %}" alt="photo">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zodiac</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="icon" href="{% static 'photos/index.png' %}">
+</head>
+
+<body>
+    <div class="index_bckg">
+        <hr>
+        <div class="index_tit">࿊ zodiac ࿊</div>
+        <a class="left" href="{% url 'pisces' %}"> to ♓︎</a>
+        <a class="right" href="{% url 'aries' %}"> to ♈︎</a>
+        <br>
+        <hr>
+
+        <img class="pho" src="{% static 'photos/index.png' %}" alt="photo">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scorpio</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="icon" href="{% static 'photos/stars/logo6.png' %}">
+</head>
+
+<body>
+    <div class="scorpio_bckg">
+        <hr>
+        <div class="scorpio_tit">♏︎ Scorpio - 天蝎座 ♏︎</div>
+        <a class="left" href="{% url 'libra' %}"> to ♎︎</a>
+        <a class="right" href="{% url 'sagittarius' %}"> to ♐︎ </a>
+        <br>
+        <hr>
+
+        <img class="pho" src="{% static 'photos/stars/scorpio.png' %}" alt="photo">
+    </div>
+</body>
+
+</html>
